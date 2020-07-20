@@ -12,4 +12,8 @@ describe('App', () => {
     // const wrapper = shallow(<App />);
     expect(wrapper.find('div').length).toEqual(1);
   });
+
+  it('should render the Calculator Component', () => {
+    expect(wrapper.containsMatchingElement(<Caluculator />)).toEqual(true)
+  });
 });
