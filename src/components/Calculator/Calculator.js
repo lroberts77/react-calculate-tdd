@@ -10,8 +10,28 @@ class Calculator extends Component {
     operators: [],
     //operator selected for math operation
     selectedOperator: '',
-    //stored vslue to use for math operatiion
+    //stored value to use for math operatiion
     storedValue: '',
   }
 
+  callOperator = () => {
+    console.log('call operation');
+  }
+
+  setOperator = () => {
+    console.log('set operation');
+  }
+
+  updateDisplay = () => {
+    console.log('update display');
+  }
+
+  render = () => {
+    return (
+      <div className='calculator-container' />
+    );
+  }
+
 }
+
+export default Calculator;
