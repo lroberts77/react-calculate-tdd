@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Disaply from './Display';
+import Display from './Display';
 
 describe('Display', () => {
 
@@ -8,7 +8,7 @@ describe('Display', () => {
 
   beforeEach(() => wrapper = shallow(<Display />));
 
-  instanceof('should render a <div />', () => {
+  it('should render a <div />', () => {
     expect(wrapper.find('div').length).toEqual(1);
   });
 })
