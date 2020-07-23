@@ -1,0 +1,8 @@
+.display-container {
+  align-items: center;
+  background: var(--display-background-color);
+  display: flex;
+  padding: 0%;
+  height: var(--display-height);
+  width: var(--display-width);
+}
