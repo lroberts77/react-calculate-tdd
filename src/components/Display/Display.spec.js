@@ -18,4 +18,5 @@ describe('Display', () => {
     wrapper.setProps({ displayValue: 'test'});
     expect(wrapper.text()).toEqual('test')
   });
+  
 })

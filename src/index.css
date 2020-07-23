@@ -7,9 +7,18 @@ app variables
   --calculator-background-color: #696969;
   /* font */
   --main-font: 'Orbitron', sans-serif;
+  /*font colours */
+  --display-text-color: #23e000;
+  /* font sizes */
+  --display-text-size: 4em;
+  /* font weights */
+  --display-text-weight: 400;
   /*calculator dimensions*/
   --calculator-height: 72%;
   --calculator-width: 36%;
+  /* display dimensions */
+  --display-height: 24%;
+  --display-width: 92%;
 }
 
 /*
@@ -18,6 +27,8 @@ media query for tablet or smaller screen
 
 @media screen and (max-width: 1024px) {
   :root {
+    /* font sizes */
+    --display-text-size: 10em;
     /* calculator dimensions */
     --calculator-height: 100%;
     --calculator-width: 100%;
