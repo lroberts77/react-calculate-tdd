@@ -29,7 +29,7 @@ describe('Keypad', () => {
 
   it('renders the values of operators', () => {
     wrapper.setProps({operators: ['+', '-', '*', '/']});
-    expect(wrapper.find('operators-container').text()).toEqual('+-*/')
+    expect(wrapper.find('.operators-container').text()).toEqual('+-*/')
   });
-  
+
 })
