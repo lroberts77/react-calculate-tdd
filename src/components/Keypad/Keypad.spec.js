@@ -18,7 +18,7 @@ describe('Keypad', () => {
     );
   });
 
-  it('should render a <div />', () => {;
+  it('should render 3 <div /> \'s ', () => {;
     expect(wrapper.find('div').length).toEqual(3);
   });
 
