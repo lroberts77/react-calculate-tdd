@@ -21,6 +21,11 @@ const Keypad = ({
       <div className="operators-container">
         {operatorKeys}
       </div>
+      <Key
+        keyAction={callOperator}
+        keyType=""
+        keyValue=""
+      />
     </div>
   );
 }
