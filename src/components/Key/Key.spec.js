@@ -8,7 +8,7 @@ describe('Key', () => {
 
   beforeEach(() => {
     wrapper = shallow(
-      <key
+      <Key
         keyAction={jest.fn()}
         keyType={''}
         keyValue={''}
@@ -16,8 +16,8 @@ describe('Key', () => {
     );
   });
 
-  it('shouild render a <div />', () => {
+  it('should render a <div />', () => {
     expect(wrapper.find('div').length).toEqual(1)
   });
-  
+
 });
