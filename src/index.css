@@ -12,18 +12,21 @@ app variables
   --number-key-color-hover: #3f3f3f;
   --submit-key-color: #d18800;
   --submit-key-color-hover: #aa6e00;
-  
+
   /* font */
   --main-font: 'Orbitron', sans-serif;
 
   /*font colours */
   --display-text-color: #23e000;
+  --key-text-color: #d3d3d3;
 
   /* font sizes */
   --display-text-size: 4em;
+  --key-text-size: 3em;
 
   /* font weights */
   --display-text-weight: 400;
+  --key-text-weight: 700;
 
   /*calculator dimensions*/
   --calculator-height: 72%;
