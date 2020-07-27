@@ -19,3 +19,21 @@
   background-color: var(--action-key-color-hover);
 }
 
+.number-key {
+  background-color: var(--number-key-color);
+  width: calc(100%/3);
+}
+
+.number-key:hover {
+  background-color: var(--number-key-color-hover);
+}
+
+.submit-key {
+  background-color: var(--submit-key-color);
+  height: 100%;
+  width: 100%;
+}
+
+.submit-key:hover {
+  background-color: var(--submit-key-color-hover);
+}
