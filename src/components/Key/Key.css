@@ -37,3 +37,10 @@
 .submit-key:hover {
   background-color: var(--submit-key-color-hover);
 }
+
+.key-value {
+  color: var(--key-text-color);
+  font-family: var(--main-font);
+  font-size: var(--key-text-size);
+  font-weight: var(--key-text-weight);
+}
