@@ -18,8 +18,8 @@ describe('Keypad', () => {
     );
   });
 
-  it('should render 3 <div /> \'s ', () => {;
-    expect(wrapper.find('div').length).toEqual(3);
+  it('should render 4 <div /> \'s ', () => {;
+    expect(wrapper.find('div').length).toEqual(4);
   });
 
   it('renders the values of numbers', () => {
