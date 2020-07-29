@@ -36,11 +36,11 @@ const Keypad = ({
       <div className="operators-container">
         {operatorKeys}
       </div>
-      <div className="submitcontainer">
+      <div className="submit-container">
       <Key
         keyAction={callOperator}
         keyType="submit-key"
-        keyValue=""
+        keyValue="="
       />
       </div>
     </div>

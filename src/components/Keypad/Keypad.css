@@ -7,7 +7,7 @@
   width: var(--keypad-width);
 }
 
-.number-container {
+.numbers-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
