@@ -26,7 +26,26 @@ class Calculator extends Component {
     console.log('set operation');
   }
 
-  updateDisplay = () => {
+  updateDisplay = value => {
+
+    let { displayValue } = this.state;
+
+    //prevent multiple instances of '.'
+    if (value === '.' && displayValue.includes('.')) value = '';
+
+    if(value === 'ce') {
+      //deletes last char in displayValue
+      displayValue = displayValue.substr(0, displayValue.length -1);
+
+      //set displayValue to '0' if displayValue is empty string
+      if (displayValue === '') displayValue = '0';
+    } else {
+
+      //replace displayValue with value if displayValue equal to '0'
+      //esle concatenate displayValue and value
+      displayValue === '0' ? displayValue : displayValue += value;
+    }
+    this.setState({ displayValue });
     console.log('update display');
   }
 
