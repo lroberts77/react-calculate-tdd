@@ -34,30 +34,30 @@ describe('Keypad', () => {
     expect(wrapper.find('Key').length).toEqual(keyTotal);
   });
 
-  describe('mounted Keypad', () => {
-    let wrapper;
-  
-    beforeEach(() => {
-      wrapper = mount(
-        <Keypad
-          callOperator={jest.fn()}
-          numbers={[]}
-          operators={[]}
-          setOperator={jest.fn()}
-          updateDisplay={jest.fn()}
-        />
-      );
-    });
-  
-    it('renders the values of numbers to the DOM', () => {
-      wrapper.setProps({ numbers: ['0', '1', '2'] })
-      expect(wrapper.find('.numbers-container').text()).toEqual('012');
-    });
-  
-    it('renders the values of operators to the DOM', () => {
-      wrapper.setProps({ operators: ['+', '-', '*', '/'] });
-      expect(wrapper.find('.operators-container').text()).toEqual('+-*/');
-    });
+describe('mounted Keypad', () => {
+  let wrapper;
+
+  beforeEach(() => {
+    wrapper = mount(
+      <Keypad
+        callOperator={jest.fn()}
+        numbers={[]}
+        operators={[]}
+        setOperator={jest.fn()}
+        updateDisplay={jest.fn()}
+      />
+    );
   });
+
+  it('renders the values of numbers to the DOM', () => {
+    wrapper.setProps({ numbers: ['0', '1', '2'] })
+    expect(wrapper.find('.numbers-container').text()).toEqual('012');
+  });
+
+  it('renders the values of operators to the DOM', () => {
+    wrapper.setProps({ operators: ['+', '-', '*', '/'] });
+    expect(wrapper.find('.operators-container').text()).toEqual('+-*/');
+  });
+});
 
 })
