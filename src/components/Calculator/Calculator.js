@@ -43,11 +43,14 @@ class Calculator extends Component {
 
       //replace displayValue with value if displayValue equal to '0'
       //esle concatenate displayValue and value
-      displayValue === '0' ? displayValue : displayValue += value;
+      displayValue === '0' ? displayValue = value : displayValue += value;
     }
     this.setState({ displayValue });
+
     console.log('update display');
+    
   }
+  
 
   render = () => {
     // unpack the component state by using Object Destructuring
