@@ -87,7 +87,7 @@ class Calculator extends Component {
     }
     this.setState({ displayValue, selectedOperator, storedValue });
 
-    // console.log(this.state.setOperator);
+    console.log('setOperator');
   }
 
   updateDisplay = value => {
