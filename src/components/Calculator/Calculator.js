@@ -26,8 +26,8 @@ class Calculator extends Component {
     const updateStoredValue = displayValue;
 
     //parse strings for operations
-    displayValue = Number(displayValue);
-    storedValue = Number(storedValue);
+    displayValue = (displayValue) * 1;
+    storedValue = (storedValue) * 1;
 
     //performs selected operation
     switch (selectedOperator) {
