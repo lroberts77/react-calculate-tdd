@@ -19,6 +19,7 @@ app variables
   /* font colors */
   --display-text-color: #23e000;
   --key-text-color: #d3d3d3;
+  --hov-text-color: rgba(0, 255, 0, 0);
 
   /* font sizes */
   --display-text-size: 4em;
