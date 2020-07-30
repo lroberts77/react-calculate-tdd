@@ -26,8 +26,8 @@ class Calculator extends Component {
     const updateStoredValue = displayValue;
 
     //parse strings for operations
-    displayValue = parseInt(displayValue, 10);
-    storedValue = parseInt(storedValue, 10);
+    displayValue = Number(displayValue);
+    storedValue = Number(storedValue);
 
     //performs selected operation
     switch (selectedOperator) {
@@ -59,7 +59,9 @@ class Calculator extends Component {
 
     this.setState({ displayValue, selectedOperator, storedValue, updateStoredValue });
 
-    console.log('call operation');
+    console.log(this.state.displayValue);
+
+
   }
 
   setOperator = value => {
@@ -85,7 +87,7 @@ class Calculator extends Component {
     }
     this.setState({ displayValue, selectedOperator, storedValue });
 
-    console.log('set operation');
+    // console.log(this.state.setOperator);
   }
 
   updateDisplay = value => {
@@ -109,7 +111,7 @@ class Calculator extends Component {
     }
     this.setState({ displayValue });
 
-    console.log('update display');
+    console.log(this.state.displayValue);
     
   }
   
