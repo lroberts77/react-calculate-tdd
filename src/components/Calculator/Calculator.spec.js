@@ -154,6 +154,14 @@ describe('callOperator', () => {
 
   beforeEach(() => wrapper = shallow(<Calculator />));
 
+  it('updates calculates decimals', () => {
+    wrapper.setState({ storedValue: '1.5'});
+    wrapper.setState({ displayValue: '2'});
+    wrapper.setState({ selectedOperator: '+'});
+    wrapper.instance().callOperator();
+    expect(wrapper.state('displayValue')).toEqual('3.5')
+  });
+
   it('updates displayValue to the sum of storedValue and displayValue', () => {
     wrapper.setState({ storedValue: '3' });
     wrapper.setState({ displayValue: '2'});
