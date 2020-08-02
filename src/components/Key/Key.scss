@@ -1,9 +1,10 @@
 .key-container {
   align-items: center;
   display: flex;
-  height: 25%;
+  height: 20%;
   justify-content: center;
   transition: background-color 0.3s linear;
+  border-radius: 15px;
 }
 
 .key-container:hover {
@@ -25,7 +26,7 @@
 }
 
 .number-key:hover {
-  /* background-color: var(--number-key-color-hover); */
+  background-color: var(--number-key-color-hover);
   text-shadow: 5px 5px 11px rgb(153, 255, 0);
 }
 
