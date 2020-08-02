@@ -40,6 +40,10 @@ app variables
   /* keypad dimensions */
   --keypad-height: 72%;
   --keypad-width: 96%;
+
+  /* neumorphic styling */
+  --morphic-shadow: -6px -6px 9px #fff, 6px 6px 9px rgba (#000,0.4);
+
 }
 
 /*
@@ -65,4 +69,8 @@ app CSS reset
 body, div, p {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: #e9e9e9;
 }
