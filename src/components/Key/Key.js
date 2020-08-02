@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Key.css';
+import './Key.scss';
 
 const Key = ({ keyAction, keyType, keyValue }) => (
   <div 

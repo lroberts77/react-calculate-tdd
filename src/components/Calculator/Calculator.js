@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Display from '../Display/Display';
 import Keypad from '../Keypad/Keypad';
-import './Calculator.css';
+import './Calculator.scss';
 
 class Calculator extends Component {
   state = {
@@ -17,7 +17,6 @@ class Calculator extends Component {
     storedValue: '',
   }
  
-
   callOperator = () => {
 
     let { displayValue, selectedOperator, storedValue } = this.state;
