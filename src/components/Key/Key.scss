@@ -24,13 +24,13 @@
   background-color: var(--number-key-color);
   width: 80%;
   margin: 9%;
-    &:hover,
-    &:active {
-      background-color: var(--key-color-hover);
-    }
-    &:active {
-      @include active-shadow();
-    }
+  &:hover,
+  &:active {
+    background-color: var(--key-color-hover);
+  }
+  &:active {
+    @include active-shadow();
+  }
 }
 
 
@@ -41,10 +41,10 @@
   @include key-shadow;
   margin: 3%;
   margin-left: 3.6%;
-}
-
-.number-key:hover {
-  background-color: var(--key-color-hover);
+  &:hover,
+  &:active {
+    background-color: var(--key-color-hover);
+  }
 }
 
 .submit-key {
