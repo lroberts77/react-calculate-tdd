@@ -45,6 +45,9 @@
   &:active {
     background-color: var(--key-color-hover);
   }
+  &:active {
+    @include active-shadow();
+  }
 }
 
 .submit-key {
