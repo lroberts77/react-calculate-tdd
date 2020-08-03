@@ -2,6 +2,10 @@
   box-shadow: -6px -6px 9px #fff, 6px 6px 9px rgba(#000, 0.4);
 }
 
+@mixin active-shadow {
+  box-shadow: inset -6px -6px 9px #fff, inset 6px 6px 9px rgba(#000, 0.4);
+}
+
 .key-container {
   align-items: center;
   display: flex;
@@ -23,6 +27,9 @@
     &:hover,
     &:active {
       background-color: var(--key-color-hover);
+    }
+    &:active {
+      @include active-shadow();
     }
 }
 
