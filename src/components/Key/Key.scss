@@ -23,7 +23,7 @@
 }
 
 .operator-key:hover {
-  background-color: var(--action-key-color-hover);
+  background-color: var(--key-color-hover);
 }
 
 .number-key {
@@ -35,8 +35,7 @@
 }
 
 .number-key:hover {
-  background-color: var(--number-key-color-hover);
-  text-shadow: 5px 5px 11px rgb(153, 255, 0);
+  background-color: var(--key-color-hover);
 }
 
 .submit-key {
