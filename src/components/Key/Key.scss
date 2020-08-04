@@ -46,6 +46,7 @@
 
 
 .number-key {
+  @include noselect();
   background-color: var(--number-key-color);
   width: calc(80%/3);
   @include key-shadow;
