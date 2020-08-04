@@ -1,5 +1,5 @@
 # React Calculator using TDD
-### Technologies: React, jest, enzyme, JS, HTML, CSS
+### Technologies: React, jest, enzyme, JS, HTML, CSS, SCSS
 
 ## Index
 * [Project Direction](#Project)
@@ -31,4 +31,4 @@ $ npm test
 ```shell
 $ npm start
 ```
-If a tab doesn't open with the calculator app running, open a new tab and type in localhost:3000 in the url bar and press enter. After the calculator has loaded click on the keys like a normal calculator.
+If a tab doesn't open with the calculator app running, open a new tab and type in localhost:3000 in the url bar and press enter. After the calculator has loaded click on the keys and use like a normal calculator.
