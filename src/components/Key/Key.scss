@@ -15,6 +15,10 @@
   user-select: none;
 }
 
+@mixin num-key-shadow {
+  text-shadow: 6px 6px 9px rgba(#000, 0.4);
+}
+
 .key-container {
   align-items: center;
   display: flex;
@@ -56,6 +60,7 @@
   &:active {
     .key-value{
     color: var(--key-color-hover);
+    @include num-key-shadow();
     }
   }
   &:active {
