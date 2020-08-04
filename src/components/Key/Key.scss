@@ -57,7 +57,7 @@
   width: 100%;
   &:hover,
   &:active {
-    background-color: var(--submit-key-color-hover);
+    background-color: var(--submit-operator-key-color-hover);
   }
   &:active {
     @include active-shadow();
