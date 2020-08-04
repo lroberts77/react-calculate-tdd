@@ -49,12 +49,14 @@
   @include noselect();
   background-color: var(--number-key-color);
   width: calc(80%/3);
-  @include key-shadow;
+  @include key-shadow();
   margin: 3%;
   margin-left: 3.6%;
   &:hover,
   &:active {
-    background-color: var(--key-color-hover);
+    .key-value{
+    color: var(--key-color-hover);
+    }
   }
   &:active {
     @include active-shadow();
@@ -63,7 +65,7 @@
 
 .submit-key {
   @include noselect();
-  @include key-shadow;
+  @include key-shadow();
   background-color: var(--submit-key-color);
   height: 100%;
   width: 100%;
