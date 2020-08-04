@@ -6,6 +6,15 @@
   box-shadow: inset -6px -6px 9px #fff, inset 6px 6px 9px rgba(#000, 0.4);
 }
 
+@mixin noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .key-container {
   align-items: center;
   display: flex;
@@ -20,12 +29,7 @@
 }
 
 .operator-key {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  @include noselect();
   @include key-shadow();
   background-color: var(--number-key-color);
   width: 80%;
@@ -57,6 +61,7 @@
 }
 
 .submit-key {
+  @include noselect();
   @include key-shadow;
   background-color: var(--submit-key-color);
   height: 100%;
