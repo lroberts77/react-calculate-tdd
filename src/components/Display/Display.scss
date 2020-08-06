@@ -18,7 +18,7 @@
   align-items: center;
   background: #e9e9e9;
   display: flex;
-  padding: 0 4%;
+  padding: 0 2%;
   height: var(--display-height);
   width: var(--display-width);
 }
@@ -30,4 +30,5 @@
   font-family: var(--main-font);
   font-weight: var(--display-text-weight);
   margin-left: auto;
+  overflow: scroll;
 }
