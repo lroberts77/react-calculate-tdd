@@ -46,6 +46,7 @@ class Calculator extends Component {
                 //set displayValue to zero if no case matches
                 displayValue = '0';
     }
+
     
     //converts displayValue into a string
     displayValue = displayValue.toString();
