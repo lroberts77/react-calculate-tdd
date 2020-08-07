@@ -59,6 +59,9 @@ describe('mounted Calculator', () => {
     expect(spy).toHaveBeenCalledTimes(0);
     wrapper.find('.submit-key').simulate('click');
     expect(spy).toHaveBeenCalledTimes(1);
+
+    wrapper.unmount();
+    
   });
 
 });
