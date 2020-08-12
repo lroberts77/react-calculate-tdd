@@ -15,7 +15,7 @@ The deployed live app is [HERE](https://lroberts77.github.io/react-calculate-tdd
 
 * Or to clone repo
 ```shell
-$ git clone https://lroberts77.github.io/react-calculate-tdd
+$ git clone git@github.com:lroberts77/react-calculate-tdd.git
 $ cd react-calculator
 $ npm install
 ```
@@ -32,3 +32,75 @@ $ npm test
 $ npm start
 ```
 If a tab doesn't open with the calculator app running, open a new tab and type in localhost:3000 in the url bar and press enter. After the calculator has loaded click on the keys and use like a normal calculator.
+
+
+import React from 'react';
+import { shallow } from 'enzyme';
+import VideoList from './VideoList';
+import App from '../App';
+
+const defaultProps = {
+  video: null,
+  onVideoSelect: App.onVideoSelect
+};
+
+const setup = (props = {}) => {
+  const setupProps = { ...defaultProps, ...props };
+  return shallow(<VideoList {...setupProps} />);
+};
+
+it("should render a div", () => {
+  const wrapper = setup({ videos: [] });
+  expect(wrapper.find('div').length).toBe(1);
+});
+
+describe("when a video has been selected", () => {
+
+  let mockFunction;
+
+  let wrapper; 
+
+  beforeEach(() => {
+    mockFunction = jest.fn();
+    const video = {
+      snippet: { thumbnails: { medium: "123" }, title: "title" },
+      id: { videoId: "123" }
+    };
+
+    wrapper = setup({ videos: [video], onVideoSelect: { mockFunction } }); 
+
+    it("should render a list of video items", () => {
+      const wrapper = setup({ videos: [video], onVideoSelect: { mockFunction } });
+      expect(wrapper.find('video').length).toBe(1);
+    });
+  });
+});
+
+import React from 'react';
+import { shallow, mount } from 'enzyme';
+import VideoItem from './VideoItem';
+import App from "../App";
+
+const defaultProps = {
+  video: null,
+  onVideoSelect: App.onVideoSelect
+};
+
+const setup = (props = {}) => {
+  const setupProps = { ...defaultProps, ...props };
+  return shallow(<VideoItem {...setupProps} />);
+};
+
+it("should render a div", () => {
+  const wrapper = setup(
+    {
+      video: {
+        snippet: { thumbnails: { medium: { url: "www.video.com" } } },
+        id: { videoId: "123" }
+      }
+    },
+    { onVideoSelect: App.onVideoSelect }
+  );
+  expect(wrapper.find('div').length).toBe(1);
+});
+
