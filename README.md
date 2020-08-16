@@ -36,3 +36,4 @@ If a tab doesn't open with the calculator app running, open a new tab and type i
 
 ## <a name="Improvements">Improvements</a>
 * Add test coverage results
+* Deploy app
