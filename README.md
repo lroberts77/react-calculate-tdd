@@ -1,5 +1,5 @@
 # React Calculator using TDD
-### Technologies: React, jest, enzyme, JS, HTML, CSS, SCSS
+### Technologies: React, jest, enzyme, JavaScript, HTML, CSS, SCSS
 
 ## Index
 * [Project Direction](#Project)
