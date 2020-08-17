@@ -9,7 +9,7 @@
 * [Improvemets](#Improvements)
 
 ## <a name="Project">Project Direction</a>
-I created this app to improve my understanding of TDD and code testing using React. Although it took me longer than I expected and I ran into quite a few problems, I learned alot during the course of making this app including shallow and mounted testing, component separation and snapshot testing.
+I created this app to improve my understanding of TDD and code testing using React. Although it took me longer than I expected and I ran into quite a few problems, I learned alot during the course of making this app including shallow and mounted testing, component separation, snapshot testing and CI/CD with Travis CI and Github-pages CD.
 
 ## <a name="Install">Installation</a>
 The deployed live app is [HERE](https://lroberts77.github.io/react-calculate-tdd/)
@@ -36,4 +36,4 @@ If a tab doesn't open with the calculator app running, open a new tab and type i
 
 ## <a name="Improvements">Improvements</a>
 * Add test coverage results
-* Deploy app
+* Deploy app "COMPLETED"
