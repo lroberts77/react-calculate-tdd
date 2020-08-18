@@ -9,7 +9,7 @@
 * [Improvemets](#Improvements)
 
 ## <a name="Project">Project Direction</a>
-I created this app to improve my understanding of TDD and code testing using React. Although it took me longer than I expected and I ran into quite a few problems, I learned alot during the course of making this app including shallow and mounted testing, component separation, snapshot testing and CI/CD with Travis CI and Github-pages CD.
+I created this app to improve my understanding of TDD and code testing using React. Although I ran into quite a few problems I learned alot during the course of making this app including shallow and mounted testing, component separation, snapshot testing and CI/CD with Travis CI and Github-pages.
 
 ## <a name="Install">Installation</a>
 The deployed live app is [HERE](https://lroberts77.github.io/react-calculate-tdd/)
