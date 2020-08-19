@@ -36,7 +36,7 @@ $ npm test
 ```shell
 $ npm start
 ```
-If a tab doesn't open with the calculator app running, open a new tab and type in localhost:3000 in the url bar and press enter. After the calculator has loaded click on the keys and use like a normal calculator.
+If a tab doesn't open with the calculator app running, open a new tab and type in http://localhost:5000 in the url bar and press enter. After the calculator has loaded click on the keys and use like a normal calculator.
 
 ## <a name="Improvements">Improvements</a>
 * Add test coverage results
