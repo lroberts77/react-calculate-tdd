@@ -1,7 +1,7 @@
 # React Calculator using TDD
 ### [LIVE APP](https://lroberts77.github.io/react-calculate-tdd/)
 
-[![Build Status](https://travis-ci.org/lroberts77/react-calculate-tdd.svg?branch=master)](https://travis-ci.org/lroberts77/react-calculate-tdd)
+[![Build Status](https://img.shields.io/travis/lroberts77/react-calculate-tdd/master.svg?colorA=000000&colorB=be33ff)](https://travis-ci.org/lroberts77/react-calculate-tdd)
 
 ### Technologies: React, travis CI, Github-pages CD, enzyme, jest,  JavaScript, HTML, CSS, SCSS
 
